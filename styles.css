@@ -1,0 +1,14 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500&family=Rubik+Beastly&display=swap");
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #aaaaaa;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Rubik Beastly", cursive; */
+}
