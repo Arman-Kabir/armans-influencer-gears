@@ -6,9 +6,76 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --primary-color: #97037e;
 }
 body {
-  background-color: #aaaaaa;
+  background-color: #fff;
   font-family: "Montserrat", sans-serif;
+
   /* font-family: "Rubik Beastly", cursive; */
+}
+.container {
+  width: 1200px;
+  padding: 30px;
+  /* background-color: aliceblue; */
+  background-color: #fbfbfb;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: justify;
+  margin-bottom: 16px;
+}
+p {
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  text-align: justify;
+}
+.primary-button {
+  font-family: "Rubik Beastly", cursive;
+  font-size: 16px;
+  width: 170px;
+  text-decoration: none;
+  padding: 15px 10px;
+  background-color: var(--primary-color);
+  color: white;
+  outline: 0;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 0 7px 0 #f803cf;
+  position: relative;
+  top: 0;
+}
+.primary-button:active {
+  top: 4px;
+  box-shadow: 0 0px 0 #f803cf;
+  transition: top 0.3s linear;
+}
+
+/* Influencer Section
+------------------------- */
+.influencer-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.influencer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0 20px;
+}
+.influencer-camera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/Circle-design.svg);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: 61% 109%;
+}
+.influencer-camera img {
+  width: 60%;
 }
