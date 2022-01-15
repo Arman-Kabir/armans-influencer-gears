@@ -15,7 +15,7 @@ body {
   /* font-family: "Rubik Beastly", cursive; */
 }
 .container {
-  width: 1200px;
+  max-width: 1100px;
   padding: 30px;
   /* background-color: aliceblue; */
   background-color: #fbfbfb;
@@ -27,24 +27,20 @@ h1 {
   text-align: justify;
   margin-bottom: 16px;
 }
-.section-title{
-  font-size: 32px;
-  margin-bottom: 30px;
-  text-align: center;
-  color: var(--primary-color);
-}
+
 p {
   font-size: 16px;
   margin-bottom: 16px;
   line-height: 1.5em;
   letter-spacing: 0.1em;
-  text-align: justify;
 }
-.primary-button {
-  font-family: "Rubik Beastly", cursive;
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   font-size: 16px;
   width: 170px;
-  text-decoration: none;
   padding: 15px 10px;
   background-color: var(--primary-color);
   color: white;
@@ -55,18 +51,28 @@ p {
   position: relative;
   top: 0;
 }
-.primary-button:active {
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+.btn:active {
   top: 4px;
   box-shadow: 0 0px 0 #f803cf;
   transition: top 0.3s linear;
 }
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--primary-color);
+}
 
 /* Influencer Section
 ------------------------- */
-.influencer-section {
+#influencer-section {
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0 0 30px 0;
 }
 .influencer-text {
   display: flex;
@@ -93,7 +99,7 @@ hr {
   /* color: grey;
   font-size: 3px; */
 }
-.company-branding {
+#company-branding {
   margin: 100px 0;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
@@ -105,40 +111,49 @@ hr {
 
 /* Popular Collection
 -------------------- */
-.popular-collection{
-
+#popular-collection {
 }
-.collections{
+.collections {
   display: grid;
-  grid-template-columns: repeat (3, 1fr );
-  gap:30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
-.collection{
+.collection {
   padding: 14px;
   background-color: #fff;
-  box-shadow: 5px 5px 30px gray;
+  box-shadow: 1px 1px 5px gray;
 }
-.gear-photo{
-
+.collection:hover {
+  padding: 14px;
+  background-color: #fff;
+  box-shadow: 5px 5px 45px var(--primary-color);
 }
-.gear-detail{
-
+.gear-photo {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
-.gear-detail .gear-price,p{
+.gear-detail {
+}
+.gear-title {
+  padding: 16px 0 6px 0;
+}
+.gear-price {
   font-size: 24px;
   margin: 0;
+  padding: 3px 0;
 }
-.gear-rating{
-
+.gear-rating {
+  padding: 2px 0 5px 0;
+  /* font-size: 12px; */
 }
-.filled{
-  color:#FB8200;
+.filled,
+.half-filled {
+  color: #fb8200;
+  font-size: 12px;
 }
-.half-filled{
-  color:#FB8200;
-}
-.gear-info p{
-  font-size: 14px;
+.gear-info > p {
+  font-size: 12px;
   color: #787885;
   font-weight: bold;
   margin: 0;
