@@ -26,6 +26,7 @@ h1 {
   font-weight: 900;
   text-align: justify;
   margin-bottom: 16px;
+  padding-top: 50px;
 }
 
 p {
@@ -70,7 +71,8 @@ p {
 /* Influencer Section
 ------------------------- */
 #influencer-section {
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  /* margin: 60px 0; */
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
