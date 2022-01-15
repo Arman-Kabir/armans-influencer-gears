@@ -257,7 +257,12 @@ footer {
 .footer-text p {
   margin-bottom: 0px;
 }
-
+.social-icons {
+  width: 110px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
 /* Media Queries
 ---------------------- */
 /* 1099px */
