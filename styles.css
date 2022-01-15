@@ -1,45 +1,52 @@
 /* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500&family=Rubik+Beastly&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Island+Moments&family=Karla:wght@800&family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
 
 /* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* --primary-color: #97037e; */
-  
-  --primary-color: #04AA6D;
-  --footer-color: #0A0826;
+  --primary-color: #5ac05a;
+  --secondary-color: #04aa6d;
+  --footer-color: #0a0826;
 }
 body {
   background-color: #fff;
-  font-family: "Montserrat", sans-serif;
 
-  /* font-family: "Rubik Beastly", cursive; */
+  /* font-family: "Dongle", sans-serif;
+  font-family: "Karla", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif; 
+  font-family: 'Island Moments', cursive;*/
+
+  font-family: "Poppins", sans-serif; 
 }
 .container {
   max-width: 1100px;
   padding: 30px;
-  /* background-color: aliceblue; */
-  background-color: #fbfbfb;
   margin: 0 auto;
 }
 h1 {
   font-size: 48px;
   font-weight: 900;
+  color: var(--primary-color);
   text-align: justify;
+  line-height: 1em;
   margin-bottom: 16px;
   padding-top: 50px;
 }
 
 p {
+  font-family: "Karla", sans-serif;
   font-size: 16px;
   margin-bottom: 16px;
   line-height: 1.5em;
   letter-spacing: 0.1em;
+  font-family: "Montserrat", sans-serif;
 }
 
 .btn {
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -51,7 +58,7 @@ p {
   outline: 0;
   border: 0;
   border-radius: 50px;
-  box-shadow: 0 7px 0 #f803cf;
+  box-shadow: 0 7px 0 var(--secondary-color);
   position: relative;
   top: 0;
 }
@@ -61,14 +68,42 @@ p {
 }
 .btn:active {
   top: 4px;
-  box-shadow: 0 0px 0 #f803cf;
+  box-shadow: 0 0px 0 var(--secondary-color);
   transition: top 0.3s linear;
 }
 .section-title {
+  font-family: "Montserrat", sans-serif;
   font-size: 32px;
   margin-bottom: 30px;
   text-align: center;
   color: var(--primary-color);
+}
+/* Nav Styles
+------------- */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+  color: var(--primary-color);
+  /* color: black; */
+}
+.logo{
+  font-size: 48px;
+  font-family: 'Island Moments', cursive;
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li{
+  list-style: none;
+  padding: 0 15px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+
 }
 
 /* Influencer Section
@@ -105,9 +140,9 @@ hr {
   font-size: 3px; */
 }
 #company-branding {
-  margin: 100px 0;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  margin: 150px 0;
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
   padding: 20px 30px;
   display: flex;
   align-items: center;
@@ -163,7 +198,7 @@ hr {
   font-weight: bold;
   margin: 0;
 }
-#see-more{
+#see-more {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -171,39 +206,45 @@ hr {
   color: var(--primary-color);
   font-size: 18px;
 }
-#see-more a{
+#see-more a {
   text-decoration: none;
   color: var(--primary-color);
   padding-right: 20px;
 }
 /* Featured Stytles
 ------------- */
-#featured{
+#featured {
   margin: 100px 0;
   display: grid;
   gap: 30px;
   grid-template-columns: 1.5fr 2fr;
 }
-.featured-photo img{
+#featured h1{
+  font-family: "Montserrat", sans-serif;
+}
+
+.featured-photo img {
   width: 100%;
+}
+.featured-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 /* Footer Styles
  ----------------*/
- footer{
-   height: 200px;
-   background-color: var(--footer-color);
-   color: white;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
- .footer-text{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
- .footer-items{
-
- }
-
-
+footer {
+  height: 200px;
+  background-color: var(--footer-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-items {
+}
