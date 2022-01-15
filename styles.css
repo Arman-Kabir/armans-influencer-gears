@@ -6,7 +6,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --primary-color: #97037e;
+  /* --primary-color: #97037e; */
+  
+  --primary-color: #04AA6D;
+  --footer-color: #0A0826;
 }
 body {
   background-color: #fff;
@@ -188,7 +191,7 @@ hr {
  ----------------*/
  footer{
    height: 200px;
-   background-color: var(--primary-color);
+   background-color: var(--footer-color);
    color: white;
    display: flex;
    justify-content: center;
