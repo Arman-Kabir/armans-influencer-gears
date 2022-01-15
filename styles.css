@@ -220,7 +220,7 @@ nav ul li a {
     transform: scale(0.6);
   }
   to {
-    transform: scale(1.0);
+    transform: scale(1);
   }
 }
 .featured-content {
