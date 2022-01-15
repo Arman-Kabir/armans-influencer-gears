@@ -12,13 +12,11 @@
 }
 body {
   background-color: #fff;
-
   /* font-family: "Dongle", sans-serif;
   font-family: "Karla", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-family: "Poppins", sans-serif; 
   font-family: 'Island Moments', cursive;*/
-
   font-family: "Poppins", sans-serif;
 }
 .container {
@@ -34,7 +32,6 @@ h1 {
   margin-bottom: 16px;
   padding-top: 50px;
 }
-
 p {
   font-family: "Karla", sans-serif;
   font-size: 16px;
@@ -43,7 +40,6 @@ p {
   letter-spacing: 0.1em;
   font-family: "Montserrat", sans-serif;
 }
-
 .btn {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -85,7 +81,6 @@ nav {
   align-items: center;
   margin-top: 70px;
   color: var(--primary-color);
-  /* color: black; */
 }
 .logo {
   font-size: 48px;
@@ -103,7 +98,6 @@ nav ul li a {
   text-decoration: none;
   color: black;
 }
-
 /* Influencer Section
 ------------------------- */
 #influencer-section {
@@ -127,8 +121,6 @@ nav ul li a {
 }
 .influencer-camera img {
   width: 60%;
-  /* transform: scale(1.5);
-  transition: transform 2s 1s linear; */
   animation-name: video-camera;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -138,12 +130,10 @@ nav ul li a {
   from {
     transform: scale(0.5);
   }
-
   to {
     transform: scale(1.5);
   }
 }
-
 /* Company Branding
 --------------------- */
 #company-branding {
@@ -155,11 +145,8 @@ nav ul li a {
   align-items: center;
   justify-content: space-between;
 }
-
 /* Popular Collection
 -------------------- */
-#popular-collection {
-}
 .collections {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -174,10 +161,6 @@ nav ul li a {
   padding: 14px;
   background-color: #fff;
   box-shadow: 5px 5px 45px var(--primary-color);
-}
-.gear-photo {
-}
-.gear-detail {
 }
 .gear-title {
   padding: 16px 0 6px 0;
@@ -225,7 +208,6 @@ nav ul li a {
 #featured h1 {
   font-family: "Montserrat", sans-serif;
 }
-
 .featured-photo img {
   width: 100%;
 }
@@ -255,8 +237,6 @@ footer {
 }
 .footer-text p {
   margin-bottom: 0px;
-}
-.footer-items {
 }
 
 /* Media Queries
