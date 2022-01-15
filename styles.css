@@ -114,7 +114,6 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 40px 0 20px;
 }
 .influencer-camera {
@@ -135,12 +134,12 @@ nav ul li a {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-@keyframes video-camera{
-  from{
-    transform: scale(.5);
+@keyframes video-camera {
+  from {
+    transform: scale(0.5);
   }
 
-  to{
+  to {
     transform: scale(1.5);
   }
 }
@@ -235,7 +234,7 @@ nav ul li a {
   flex-direction: column;
   justify-content: center;
 }
-.featured-content h1{
+.featured-content h1 {
   padding-top: 0px;
 }
 /* Footer Styles
@@ -254,7 +253,7 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-.footer-text p{
+.footer-text p {
   margin-bottom: 0px;
 }
 .footer-items {
@@ -292,7 +291,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 20px 0 20px;
-}
+  }
   .influencer-camera {
     background-position: 80% 85%;
   }
@@ -312,12 +311,12 @@ footer {
   }
   .influencer-camera img {
     width: 40%;
-}
+  }
   .influencer-text {
     order: 2;
     padding: 0px 0px 0px;
   }
-  h1{
+  h1 {
     padding-top: 20px;
   }
   #company-branding {
@@ -326,37 +325,37 @@ footer {
   }
 }
 /* 790px */
-@media (max-width:790px) {
-  h1{
+@media (max-width: 790px) {
+  h1 {
     padding-top: 10px;
   }
   #featured {
-    margin: 50px 0;   
+    margin: 50px 0;
     grid-template-columns: 1fr;
   }
 }
 /* 740px */
-@media (max-width:740px) {
+@media (max-width: 740px) {
   .collections {
     grid-template-columns: 1fr;
   }
-  h1{
+  h1 {
     font-size: 36px;
   }
 }
 /* 650px */
-@media (max-width:650px) {
- h1{
-   text-align: center;
- }
- .influencer-text,.feature-content p{
-   text-align: justify;
-
- }
+@media (max-width: 650px) {
+  h1 {
+    text-align: center;
+  }
+  .influencer-text,
+  .feature-content p {
+    text-align: justify;
+  }
 }
 /* 503px */
-@media (max-width:503px) {
-  .navigation{
+@media (max-width: 503px) {
+  .navigation {
     display: none;
   }
 }
