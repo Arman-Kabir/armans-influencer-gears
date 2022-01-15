@@ -145,6 +145,9 @@ nav ul li a {
   align-items: center;
   justify-content: space-between;
 }
+.branding-logo img {
+  padding: 0 15px;
+}
 /* Popular Collection
 -------------------- */
 .collections {
@@ -156,6 +159,9 @@ nav ul li a {
   padding: 14px;
   background-color: #fff;
   box-shadow: 1px 1px 5px gray;
+}
+.gear-photo img {
+  width: 100%;
 }
 .collection:hover {
   padding: 14px;
@@ -278,10 +284,10 @@ footer {
     flex-direction: column;
   }
   .influencer-text {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding: 20px 0 20px;
   }
   .influencer-camera {
@@ -305,15 +311,22 @@ footer {
     width: 40%;
   }
   .influencer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     order: 2;
     padding: 0px 0px 0px;
   }
-  h1 {
-    padding-top: 20px;
+  .influencer-text h1 {
+    padding-top: 50px;
   }
   #company-branding {
     margin: 75px 0;
     flex-wrap: wrap;
+  }
+  .featured-content {
+    display: flex;
+    align-items: center;
   }
 }
 /* 790px */
