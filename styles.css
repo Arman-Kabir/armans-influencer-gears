@@ -216,6 +216,7 @@ nav ul li a {
 }
 .featured-photo img {
   width: 100%;
+  border-radius: 10px;
   animation-name: my-gears-image;
   animation-duration: 4s;
   animation-iteration-count: infinite;
