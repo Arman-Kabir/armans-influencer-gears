@@ -60,6 +60,7 @@ p {
 .influencer-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 0 0 30px 0;
 }
 .influencer-text {
   display: flex;
@@ -79,3 +80,22 @@ p {
 .influencer-camera img {
   width: 60%;
 }
+
+/* Company Branding
+--------------------- */
+hr {
+  /* color: grey;
+  font-size: 3px; */
+}
+.company-branding {
+  margin: 100px 0;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Popular Collection
+-------------------- */
